@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #1d4ed8;
+    z-index: -100;
+}
+
+body{
+    font-family: 'Honk', Times, serif;
+    font-size: 25px;
+    /* Using a <bg-image> and <repeat-style> */
+    /*background: url("assets/sfondo.gif") repeat;*/
+    background: center / contain no-repeat url("assets/bloodline.gif") ,
+            rgb(13, 5, 5) url("assets/sfondo.gif");
+}
+
+img{
+    width: 80%;
+    display: flex;
+    border-radius: 20px;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+nav{
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo{
+    max-width: 100px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #d8231d;
+    transition: all 0.3s ease;
+}
+.link a:hover::after{
+    width: 70%;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #770000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #002173;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+header{
+    position: relative;
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 5rem;
+}
+
+header .content h1{
+    margin-bottom: 2rem;
+    font-size: 5rem;
+}
+
+.Favorite_Game{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+
+.Favorite_Game .card{
+    background-color: #2727272a;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.Favorite_Game .card:hover{
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.Favorite_Game .card span{
+    display: inline-block;
+    background-color: #1e48af;
+    padding: 2px 9px;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.Favorite_Game .card h4{
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+
+
+
+footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: 450px repeat(3, 1fr);
+    gap: 2rem;
+}
+
+footer .column .logo{
+    max-width: 100px;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 30px;
+}
+
+footer .column p{
+    color: rgb(219, 29, 29);
+    margin-bottom: 2rem;
+}
+
+footer .column .socials a{
+    color: rgb(146, 19, 19);
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+footer .column .socials a:hover{
+    color: rgb(122, 16, 16);
+    background-color: #9c1818;
+    border-color: #a60000;
+}
+
+footer .column h4{
+    color: #ecf1e5;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer .column > a{
+    display: block;
+    color: #ccc;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+footer .column > a:hover{
+    color: #c9cedb;
+}
+
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: rgb(62, 5, 5);
+    font-size: 20px;
+    text-align: center;
+}
